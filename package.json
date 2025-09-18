@@ -1,14 +1,9 @@
 {
-  "name": "saas-build-with-tailwind-and-node.js-npm",
+  "name": "saas-website-manager",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cp index.html dist/index.html"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "tailwindcss": "3.4.0"
   }
