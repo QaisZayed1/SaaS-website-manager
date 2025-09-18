@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"], // scans all HTML files in project root
+  content: ["./index.html", "./src/**/*.{js,css}"], // scans all HTML files in project root
   darkMode: 'class',
   theme: {
     screens: {
