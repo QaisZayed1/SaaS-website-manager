@@ -2,7 +2,7 @@
   "name": "saas-website-manager",
   "version": "1.0.0",
 "scripts": {
-  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && copy index.html dist\\index.html"
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
 },
   "devDependencies": {
     "tailwindcss": "3.4.0"
