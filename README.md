@@ -2,7 +2,6 @@
 
 A modern and responsive SaaS landing page built with **Tailwind CSS**, featuring smooth scroll animations, a mobile-friendly navigation menu, dark mode toggle, and interactive charts with Chart.js.
 
-🚀 Live Demo: [https://saas-website-manager.netlify.app](https://saas-website-manager.netlify.app)  
 💻 Repository: [https://github.com/QaisZayed1/SaaS-website-manager](https://github.com/QaisZayed1/SaaS-website-manager)
 
 ---
