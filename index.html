@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="dist/output.css">
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <title>SaaS Website Manager</title>
     </head>
@@ -11,21 +11,21 @@
 
                 <!--Nav-->
             <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
-            <div id="navbar-inner" class="container mx-auto px-6 py-6 flex items-center justify-between transition-all duration-300">
+            <div id="navbar-inner" class="container mx-auto px-10 py-6 flex items-center justify-between transition-all duration-300">
                 <div class="pt-2">
                 <img src="img/Logo.png" alt="Manage Logo" class="h-8 w-auto"/>
                 </div>
 
-                <div class="space-x-6 hidden md:block">
-                <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-                <a href="#pricing" class="hover:text-darkGrayishBlue">Pricing</a>
-                <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-                <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
-                <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+                      <div class="space-x-6 hidden md:block">
+                    <a href="#" class="text-sm hover:text-darkGrayishBlue">Product</a>
+                    <a href="#" class="text-sm hover:text-darkGrayishBlue">Pricing</a>
+                    <a href="#" class="text-sm hover:text-darkGrayishBlue">About Us</a>
+                    <a href="#" class="text-sm hover:text-darkGrayishBlue">Careers</a>
+                    <a href="#" class="text-sm hover:text-darkGrayishBlue">Community</a>
                 </div>
                 <a href="#"
-                class="p-3 px-6 pt-2 mt-1 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight hidden md:block">
-                Get Started
+                    class="p-3 px-6 pt-2 mt-1 text-sm text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight hidden md:block">
+                    Get Started
                 </a>
                 <!-- Dark Mode Toggle -->
                 <button id="theme-toggle" class="ml-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700">
@@ -34,7 +34,7 @@
 
 
                 <!--Hamburger icon-->
-                <button id="menu-btn" class="block hamburger focus:outline-none md:hidden">
+                <button id="menu-btn" class="block hamburger focus:outline-none  md:hidden">
                 <span class="hamburger-top"></span>
                 <span class="hamburger-middle"></span>
                 <span class="hamburger-bottom"></span>
@@ -594,9 +594,9 @@
                 </div>
             </div>
 
-            <div class="flex justify-around space-x-32"> <!--Middle links Col 1,2 -->
+           <div class="flex justify-around gap-6"><!--Middle links Col 1,2 -->
                 <div class="flex flex-col space-y-3  text-white">
-                    <a href="#" class="hover:bg-brightRed">Home</a>
+                    <a href="#" class=" hover:bg-brightRed">Home</a>
                     <a href="#" class="hover:bg-brightRed">Pricing</a>
                     <a href="#" class="hover:bg-brightRed">Product</a>
                     <a href="#" class="hover:bg-brightRed">About</a>
