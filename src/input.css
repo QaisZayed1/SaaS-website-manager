@@ -187,4 +187,40 @@ body {
   color: #f9fafb; /* white text */
 }
 
+/* Add this at the very bottom of your input CSS file */
+
+/* 1. Fixes the horizontal sizing and layout flex direction */
+.flex.flex-col.md\:flex-row {
+  width: 100% !important;
+  max-width: 1140px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* 2. Fixes the dashboard card's inner content structure across breakpoints */
+@media (max-width: 991px) {
+  /* Forces dashboard elements to drop vertically on mobile instead of squeezing horizontally */
+  .flex.flex-col.md\:flex-row > div {
+    width: 100% !important;
+  }
+  
+  /* Stops charts/canvas grids from overflowing the screen width */
+  canvas, svg, .w-full {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Ensures your desktop sidebar preserves its fixed layout structure width */
+  .md\:w-64, .w-64 {
+    width: 16rem !important;
+    flex-shrink: 0 !important;
+  }
+  
+  /* Ensures main dashboard statistics take up all remaining horizontal space */
+  .flex-1 {
+    flex-grow: 1 !important;
+  }
+}
 

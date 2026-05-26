@@ -8,6 +8,7 @@
         <title>SaaS Website Manager</title>
     </head>
     <body>
+   
 
                 <!--Nav-->
             <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
@@ -323,63 +324,68 @@
         </div>
         </section>
 
-                        
-        <!-- Dashboard Preview -->
-        <section id="dashboard" class="container mx-auto px-6 py-20">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold">See the Dashboard in Action</h2>
+
+        <!-- Dashboard -->
+     <section id="dashboard" class="w-full py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        
+        <div class="max-w-3xl mx-auto text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold">See the Dashboard in Action</h2>
             <p class="mt-2 text-darkGrayishBlue">A modern, intuitive interface designed for teams.</p>
         </div>
 
-        <!-- Dashboard -->
-        <div class="mt-10 rounded-xl border shadow-lg overflow-hidden bg-white">
-            <!-- Top Nav -->
-            <div class="flex items-center justify-between px-6 py-3 bg-gray-50 border-b">
-            <div class="font-semibold">MySaaS</div>
-            <div class="space-x-4 text-sm text-gray-500">
-                <span>Settings</span>
-                <span>Profile</span>
+        <div class="max-w-5xl mx-auto w-full rounded-xl border border-gray-200 shadow-lg overflow-hidden bg-white">
+            
+            <div class="flex items-center justify-between px-6 py-3 bg-gray-50 border-b border-gray-200">
+                <div class="font-semibold text-gray-800">MySaaS</div>
+                <div class="space-x-4 text-sm text-gray-500">
+                    <span>Settings</span>
+                    <span>Profile</span>
+                </div>
             </div>
-            </div>
 
-            <div class="flex">
-            <!-- Sidebar -->
-            <aside class="w-48 bg-gray-100 border-r p-4 text-left space-y-3 text-sm">
-                <div class="font-semibold text-gray-700">Menu</div>
-                <a href="#" class="block text-gray-600 hover:text-brightRed">Dashboard</a>
-                <a href="#" class="block text-gray-600 hover:text-brightRed">Analytics</a>
-                <a href="#" class="block text-gray-600 hover:text-brightRed">Team</a>
-                <a href="#" class="block text-gray-600 hover:text-brightRed">Billing</a>
-            </aside>
+            <div class="flex flex-col md:flex-row w-full min-h-[400px]">
+                
+                <aside class="w-full md:w-48 bg-gray-100 border-b md:border-b-0 md:border-r border-gray-200 p-4 text-left flex flex-row md:flex-col flex-wrap gap-4 md:space-y-3 text-sm shrink-0">
+                    <div class="font-semibold text-gray-700 w-full hidden md:block">Menu</div>
+                    <a href="#" class="text-gray-600 hover:text-brightRed">Dashboard</a>
+                    <a href="#" class="text-gray-600 hover:text-brightRed">Analytics</a>
+                    <a href="#" class="text-gray-600 hover:text-brightRed">Team</a>
+                    <a href="#" class="text-gray-600 hover:text-brightRed">Billing</a>
+                </aside>
 
-            <!-- Main Content -->
-            <main class="flex-1 p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Chart Card -->
-                <div class="border rounded-lg p-4 shadow-sm">
-                <h3 class="font-semibold mb-2">Users Growth</h3>
-                <canvas id="usersChart" class="h-32"></canvas>
-                </div>
+                <main class="flex-4 w-full p-6 grid grid-cols-1 md:grid-cols-2 gap-6 bg-white">
+                    
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm bg-white min-w-0">
+                        <h3 class="font-semibold mb-2 text-gray-800">Users Growth</h3>
+                        <div class="h-32 bg-gray-50 rounded flex items-center justify-center border border-dashed">
+                            <canvas id="usersChart" class="h-full w-full"></canvas>
+                        </div>
+                    </div>
 
-                <!-- Stats Card -->
-                <div class="border rounded-lg p-4 shadow-sm">
-                <h3 class="font-semibold mb-2">Revenue</h3>
-                <p class="text-3xl font-bold">$12,490</p>
-                <p class="text-green-600 text-sm mt-1">▲ +18% this month</p>
-                </div>
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm bg-white min-w-0 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-semibold mb-2 text-gray-800">Revenue</h3>
+                            <p class="text-3xl font-bold text-gray-900">$12,490</p>
+                        </div>
+                        <p class="text-green-600 text-sm mt-1">▲ +18% this month</p>
+                    </div>
 
-                <!-- Activity Card -->
-                <div class="border rounded-lg p-4 shadow-sm col-span-1 md:col-span-2">
-                <h3 class="font-semibold mb-2">Recent Activity</h3>
-                <ul class="text-sm text-gray-600 space-y-1">
-                    <li>• John Doe created a new project</li>
-                    <li>• Sarah invited a new team member</li>
-                    <li>• Payment of $299 received</li>
-                </ul>
-                </div>
-            </main>
+                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm col-span-1 md:col-span-2 bg-white min-w-0">
+                        <h3 class="font-semibold mb-2 text-gray-800">Recent Activity</h3>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• John Doe created a new project</li>
+                            <li>• Sarah invited a new team member</li>
+                            <li>• Payment of $299 received</li>
+                        </ul>
+                    </div>
+                    
+                </main>
             </div>
         </div>
-        </section>
+
+    </div>
+</section>
 
         <!-- Trust / Social Proof Section -->
         <section id="trust" class="py-16">
@@ -626,6 +632,7 @@
 
             </div>
         </footer>
+        
 
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
