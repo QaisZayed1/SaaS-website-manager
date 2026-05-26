@@ -1,37 +1,45 @@
-# SaaS Landing Page
+# SaaS Website Manager 🚀
 
-A modern and responsive SaaS landing page built with **Tailwind CSS**, featuring smooth scroll animations, a mobile-friendly navigation menu, dark mode toggle, and interactive charts with Chart.js.
-
-💻 Repository: [https://github.com/QaisZayed1/SaaS-website-manager](https://github.com/QaisZayed1/SaaS-website-manager)
+👉 Live Website: https://saa-s-website-manager.vercel.app/
 
 ---
 
-## ✨ Features
+## About
 
-- 📱 Responsive design – works on mobile, tablet, and desktop
-- 🍔 Mobile menu toggle – hamburger → X animation
-- 🌙 Dark mode – switch themes instantly
-- 🎨 Scroll animations – powered by AOS (Animate on Scroll)
-- 📊 Interactive charts – built with Chart.js
-- ⚡ Fast & lightweight – optimized with Tailwind CSS
+A modern SaaS landing page and dashboard UI designed to showcase a clean, responsive, and professional web experience.
+
+This project demonstrates a complete frontend SaaS interface with smooth interactions and modern design.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ What’s Included
 
-- HTML5
+- Modern SaaS landing page
+- Responsive design (mobile / tablet / desktop)
+- Dark mode support 🌙
+- Pricing plans UI (monthly / yearly)
+- Interactive FAQ section
+- Dashboard preview UI
+- Smooth animations and transitions
+
+---
+
+## 🧑‍💻 Technology
+
+Built using modern frontend technologies:
+
+- HTML
 - Tailwind CSS
-- JavaScript (Vanilla)
-- AOS (Animate on Scroll)
-- Chart.js
+- JavaScript
 
 ---
 
-## 🚀 Getting Started
+## 🌐 Live Demo
 
-```bash
-git clone https://github.com/your-username/saas-landing-page.git
-cd saas-landing-page
-npm install
-npm run dev
-```
+👉 https://saa-s-website-manager.vercel.app/
+
+---
+
+## 👤 Author
+
+Qais Zayed
