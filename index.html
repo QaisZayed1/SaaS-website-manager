@@ -9,6 +9,7 @@
     </head>
     <body>
    
+      
 
                 <!--Nav-->
             <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
@@ -56,6 +57,8 @@
             </div>
             </nav>
 
+            
+
 
         <!--Hero Section-->
         <section class="hero pt-24">
@@ -75,9 +78,9 @@
                 </div>
             </div>
 
-            <div class="md:w-1/2 top-20"> <!--Image Right -->  
-                <img src="img/CTA.png" alt="">
-            </div>
+    <div class="md:w-1/2 top-20"> <img src="img/CTA.png" class="w-full hero-swap-image" alt="Hero Analytics">
+</div>
+
         </div>
         </section>
 
@@ -326,19 +329,19 @@
 
 
         <!-- Dashboard -->
-     <section id="dashboard" class="w-full py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
+    <section id="dashboard" class="w-full block clear-both py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <div class="container mx-auto px-4 sm:px-6">
         
         <div class="max-w-3xl mx-auto text-center mb-10">
-            <h2 class="text-3xl md:text-4xl font-bold">See the Dashboard in Action</h2>
-            <p class="mt-2 text-darkGrayishBlue">A modern, intuitive interface designed for teams.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white transition-colors duration-300">See the Dashboard in Action</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 transition-colors duration-300">A modern, intuitive interface designed for teams.</p>
         </div>
 
-        <div class="max-w-5xl mx-auto w-full rounded-xl border border-gray-200 shadow-lg overflow-hidden bg-white">
+        <div class="max-w-5xl mx-auto w-full rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg overflow-hidden bg-white dark:bg-gray-800 transition-colors duration-300">
             
-            <div class="flex items-center justify-between px-6 py-3 bg-gray-50 border-b border-gray-200">
-                <div class="font-semibold text-gray-800">MySaaS</div>
-                <div class="space-x-4 text-sm text-gray-500">
+            <div class="flex items-center justify-between px-6 py-3 bg-gray-50 dark:bg-gray-700 border-b border-gray-200 dark:border-gray-600">
+                <div class="font-semibold text-gray-800 dark:text-white transition-colors duration-300">MySaaS</div>
+                <div class="space-x-4 text-sm text-gray-500 dark:text-gray-400 transition-colors duration-300">
                     <span>Settings</span>
                     <span>Profile</span>
                 </div>
@@ -346,34 +349,34 @@
 
             <div class="flex flex-col md:flex-row w-full min-h-[400px]">
                 
-                <aside class="w-full md:w-48 bg-gray-100 border-b md:border-b-0 md:border-r border-gray-200 p-4 text-left flex flex-row md:flex-col flex-wrap gap-4 md:space-y-3 text-sm shrink-0">
-                    <div class="font-semibold text-gray-700 w-full hidden md:block">Menu</div>
-                    <a href="#" class="text-gray-600 hover:text-brightRed">Dashboard</a>
-                    <a href="#" class="text-gray-600 hover:text-brightRed">Analytics</a>
-                    <a href="#" class="text-gray-600 hover:text-brightRed">Team</a>
-                    <a href="#" class="text-gray-600 hover:text-brightRed">Billing</a>
+                <aside class="w-full md:w-48 bg-gray-100 dark:bg-gray-800 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-700 p-4 text-left flex flex-row md:flex-col flex-wrap gap-4 md:space-y-3 text-sm shrink-0">
+                    <div class="font-semibold text-gray-700 dark:text-gray-300 w-full hidden md:block">Menu</div>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-brightRed dark:hover:text-brightRed transition-colors duration-300">Dashboard</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-brightRed dark:hover:text-brightRed transition-colors duration-300">Analytics</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-brightRed dark:hover:text-brightRed transition-colors duration-300">Team</a>
+                    <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-brightRed dark:hover:text-brightRed transition-colors duration-300">Billing</a>
                 </aside>
 
-                <main class="flex-4 w-full p-6 grid grid-cols-1 md:grid-cols-2 gap-6 bg-white">
+                <main class="flex-1 w-full p-6 grid grid-cols-1 md:grid-cols-2 gap-6 bg-white dark:bg-gray-900 transition-colors duration-300">
                     
-                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm bg-white min-w-0">
-                        <h3 class="font-semibold mb-2 text-gray-800">Users Growth</h3>
-                        <div class="h-32 bg-gray-50 rounded flex items-center justify-center border border-dashed">
+                    <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm bg-white dark:bg-gray-800 min-w-0 transition-colors duration-300">
+                        <h3 class="font-semibold mb-2 text-gray-800 dark:text-white transition-colors duration-300">Users Growth</h3>
+                        <div class="h-32 bg-gray-50 dark:bg-gray-700 rounded flex items-center justify-center border border-dashed border-gray-300 dark:border-gray-600">
                             <canvas id="usersChart" class="h-full w-full"></canvas>
                         </div>
                     </div>
 
-                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm bg-white min-w-0 flex flex-col justify-between">
+                    <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm bg-white dark:bg-gray-800 min-w-0 flex flex-col justify-between transition-colors duration-300">
                         <div>
-                            <h3 class="font-semibold mb-2 text-gray-800">Revenue</h3>
-                            <p class="text-3xl font-bold text-gray-900">$12,490</p>
+                            <h3 class="font-semibold mb-2 text-gray-800 dark:text-white transition-colors duration-300">Revenue</h3>
+                            <p class="text-3xl font-bold text-gray-900 dark:text-white transition-colors duration-300">$12,490</p>
                         </div>
                         <p class="text-green-600 text-sm mt-1">▲ +18% this month</p>
                     </div>
 
-                    <div class="border border-gray-200 rounded-lg p-4 shadow-sm col-span-1 md:col-span-2 bg-white min-w-0">
-                        <h3 class="font-semibold mb-2 text-gray-800">Recent Activity</h3>
-                        <ul class="text-sm text-gray-600 space-y-2">
+                    <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm col-span-1 md:col-span-2 bg-white dark:bg-gray-800 min-w-0 transition-colors duration-300">
+                        <h3 class="font-semibold mb-2 text-gray-800 dark:text-white transition-colors duration-300">Recent Activity</h3>
+                        <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-2 transition-colors duration-300">
                             <li>• John Doe created a new project</li>
                             <li>• Sarah invited a new team member</li>
                             <li>• Payment of $299 received</li>
@@ -383,7 +386,7 @@
                 </main>
             </div>
         </div>
-
+        
     </div>
 </section>
 
